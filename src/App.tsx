@@ -1,11 +1,17 @@
 import "./App.css";
-import React from "react";
-
+import { Home, Projects, Project } from "./pages";
+import { Header, Footer } from "./components";
+import { Route, Routes } from "react-router-dom";
 function App() {
 	return (
-		<div className="flex  justify-center">
-			<h1 className="font-bold text-2xl text-blue-900">Curring</h1>
-		</div>
+		<>
+			<Header />
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/projects" element={<Projects />} />
+				<Route path="projects/:project" element={<Project />} />
+			</Routes>
+		</>
 	);
 }
 
