@@ -1,6 +1,6 @@
 import "./header.css";
-
 import { Link } from "react-router-dom";
+
 function Header() {
 	return (
 		<div className="bg-slate-900 font-mono backdrop-blur-sm drop-shadow-md">

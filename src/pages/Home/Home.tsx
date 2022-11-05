@@ -1,12 +1,11 @@
-import { listadoProyectos } from "../../listadoProyectos";
+import { listadoProyectos } from "../../mocks/listadoProyectos";
 
 const Home = () => {
-	console.log(listadoProyectos.projects);
 	return (
 		<>
-			<div className="flex flex-col justify-center items-center h-96 font-mono p-6 ">
+			<div className="flex flex-col justify-center items-center h-96  p-6 ">
 				<div className="max-w-5xl text-center mb-8">
-					<h1 className="text-5xl">
+					<h1 className="text-5xl font-mono">
 						Construimos sitios modernos que se adaptan a tus necesidades
 					</h1>
 				</div>

@@ -1,7 +1,8 @@
 import "./App.css";
 import { Home, Projects, Project } from "./pages";
-import { Header, Footer } from "./components";
+import { Header } from "./components";
 import { Route, Routes } from "react-router-dom";
+
 function App() {
 	return (
 		<>
