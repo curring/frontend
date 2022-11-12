@@ -12,31 +12,10 @@
 } 
 body{
     background-color: var(--dark);
+    color: var(--pure-white);
 }
 .App{
 
     padding: 0px;
     margin: 0px;
-}
-
-
-.button-link {
-   padding: 5px 20px;
-   border: 2px solid var(--primary);
-   border-radius: 10px;
-/*    border-image-slice: 1;
-   border-width: 3px; */
-    background: none;
-    font-weight: 500;
-    cursor: pointer;
-    color: white;
-    text-decoration: none;
-   
-    /* border-image-source: linear-gradient(to left, var(--primary), var(--primary-dark)); */
-    
-}
-
-.button-link:hover {
-    border: 2px solid var(--primary-dark);
-    background-color: var(  --primary-dark-opacity);
 }
