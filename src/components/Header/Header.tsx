@@ -1,19 +1,17 @@
-import "./header.css";
+import "./Header.css";
 import { Link } from "react-router-dom";
-
 function Header() {
 	return (
-		<div className="bg-slate-900 font-mono backdrop-blur-sm drop-shadow-md">
-			<nav className="relative flex h-20 items-center justify-between text-white px-8 ">
-				<h1> CURRING DEVELOPERS </h1>
-				<div>
-					<Link className="px-1.5 hover:text-sky-400" to="/">
-						Home
-					</Link>
-					<Link className="px-1.5 hover:text-sky-400" to="/projects">
-						Projects
-					</Link>
-				</div>
+		<div className="nav-div">
+			<Link to="/">
+				<h3>
+					<span className="span-header">&lt; </span>Curring
+					<span className="span-header"> / &gt;</span>
+				</h3>
+			</Link>
+			<nav>
+				<Link to="/">Home</Link>
+				<Link to="/projects">Projects</Link>
 			</nav>
 		</div>
 	);

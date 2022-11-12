@@ -1,4 +1,6 @@
-import Header from "./Header/Header"
-import Footer from "./Footer/Footer"
-
-export  { Header, Footer }
+import Header from "./Header/Header";
+import Cards from "./Cards/Cards";
+import Presentation from "./Presentation/Presentation";
+export {
+    Header, Cards, Presentation
+}

@@ -1,14 +1,22 @@
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { listadoProyectos } from "../../mocks/listadoDeProyectos";
 import "./project.css";
-
-const Project = () => {
+function Project() {
 	const { project } = useParams();
+	const thisProject = listadoProyectos.filter((item) => item.title === project);
+	console.log(thisProject);
 	return (
-		<div className="flex flex-col justify-center items-center h-96">
-			<h2>Demo de contenido dinamico pasando info por url</h2>
-			<h1 className="text-5xl">{project}</h1>
+		<div className="project-card">
+			<div className="project-header">
+				<h1>{thisProject[0].title}</h1>
+				<p>{thisProject[0].shortDescription}</p>
+				<Link className="button-link" to="/projects">
+					volver a proyectos
+				</Link>
+			</div>
 		</div>
 	);
-};
+}
 
 export default Project;

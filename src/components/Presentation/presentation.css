@@ -1,0 +1,32 @@
+.div-home-intro{
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(360deg,var(--dark), rgba(0, 0, 0, 0.5)), url(../../assets/bk1.jpg);
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    text-align: center;
+   
+    
+
+}
+
+.div-home-intro-module { 
+    text-align: center;
+    max-width: 800px;
+   padding: 50px;
+   margin: 0px;
+   color: white;
+   font-weight: 100;
+   line-height: 2;
+
+}
+
+.div-home-intro-module h1{ 
+font-size: 35px;
+font-weight: 700;
+line-height: 1;
+}
