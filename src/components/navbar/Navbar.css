@@ -1,0 +1,37 @@
+.span-header {
+  color: var(--primary);
+}
+
+.nav-div {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  background: var(--dark);
+
+  backdrop-filter: blur(7.5px);
+
+  padding: 0px 20px;
+
+  color: var(--pure-white);
+
+  border-bottom: 1px solid var(--primary);
+}
+
+.nav-div a {
+  color: var(--pure-white);
+
+  text-decoration: none;
+
+  padding: 0px 20px;
+}
+
+.nav-div a:hover {
+  color: var(--primary);
+}
+
+.span-header {
+  color: var(--primary);
+}
