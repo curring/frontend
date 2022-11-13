@@ -19,7 +19,7 @@ function App() {
 					element={ <Projects/> }
 				/>
 				<Route
-					path="/project"
+					path="/projects/:id"
 					element={ <Project/> }
 				/>
 			</Routes>

@@ -2,7 +2,7 @@ import './Project.css';
 
 function Project() {
   return (
-    <div>Project</div>
+    <div style={{color: 'white'}}>Project</div>
   )
 }
 
