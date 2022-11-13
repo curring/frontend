@@ -13,7 +13,7 @@ function Card( {id, title, description, img}: ICard ) {
             <div className="card-body">
                 <h1>{ title }</h1>
                 <p>{ description }</p>
-                <Link className="button-link" to={`/project/${id}`}>
+                <Link className="button-link" to={`/projects/${id}`}>
                     ver proyecto
                 </Link>
             </div>
