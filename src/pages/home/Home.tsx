@@ -1,8 +1,11 @@
+import { Header } from '../../components';
 import './Home.css';
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <Header/>
+    </div>
   )
 }
 
