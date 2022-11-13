@@ -1,4 +1,4 @@
-export const listadoProyectos = [
+export const PROJECTS_MOCK = [
 	{
 		id: 1,
 		title: "First Project",
@@ -7,7 +7,7 @@ export const listadoProyectos = [
 		shortDescription:
 			"Lorem jasdjn acsm caskm askcm aksmckmac a jnajscn anmscjnac ajnscjanscjna ajnsdjnas njucansjncaj njacnsja njac jansaclkm, Laosdcam ",
 		longDescription: "string",
-		imgs: ["url imagen web"],
+		imgs: ["https://www.hola.com/imagenes/decoracion/20211230202142/cultivar-palmeras-exterior-mc/1-36-318/cuidados-palmeras-exterior-e.jpg"],
 		createdDate: "fecha creacion",
 		status: "Finalizado",
 	},
@@ -19,7 +19,7 @@ export const listadoProyectos = [
 		shortDescription:
 			"Lorem jasdjn acsm caskm askcm aksmckmac a jnajscn anmscjnac ajnscjanscjna ajnsdjnas njucansjncaj njacnsja njac jansaclkm, Laosdcam",
 		longDescription: "string",
-		imgs: ["url imagen web"],
+		imgs: ["https://nordesbroce.com/wp-content/uploads/2021/11/IMG_20200617_121812-scaled.jpg"],
 		createdDate: "fecha creacion",
 		status: "En desarrollo",
 	},
@@ -31,8 +31,23 @@ export const listadoProyectos = [
 		shortDescription:
 			"Lorem jasdjn acsm caskm askcm aksmckmac a jnajscn anmscjnac ajnscjanscjna ajnsdjnas njucansjncaj njacnsja njac jansaclkm, Laosdcam",
 		longDescription: "string",
-		imgs: ["url imagen web"],
+		imgs: ["https://www.consumer.es/app/uploads/2019/07/img_palmeritas.jpg"],
 		createdDate: "fecha creacion",
 		status: "Finalizado",
 	},
+
+	{
+		id: 4,
+		title: "The Chocho Project",
+		category: "string",
+		tags: ["demotag", "demotag2"],
+		shortDescription:
+			"Lorem jasdjn acsm caskm askcm aksmckmac a jnajscn anmscjnac ajnscjanscjna ajnsdjnas njucansjncaj njacnsja njac jansaclkm, Laosdcam",
+		longDescription: "string",
+		imgs: ["https://www.consumer.es/app/uploads/2019/07/img_palmeritas.jpg"],
+		createdDate: "fecha creacion",
+		status: "Finalizado",
+	},
+
+
 ];
