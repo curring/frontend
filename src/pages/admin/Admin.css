@@ -1,0 +1,33 @@
+.div-admin {
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	color: var(--pure-white);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: linear-gradient(360deg, var(--dark), rgba(0, 0, 0, 0.5)),
+		url(../../assets/bk1.jpg);
+}
+
+.div-form {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	background-color:var(--primary-dark-opacity);
+	padding: 25px;
+	width: 80%;
+	max-width: 600px;
+}
+
+.inputs-form{
+	padding: 15px;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+    border: 1px solid var(--primary-dark);
+    border-radius: 5px;
+    margin-bottom: 15px;
+	color: var(--primary-dark);
+}
