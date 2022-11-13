@@ -1,47 +1,54 @@
 import "./Admin.css";
 import { useState } from "react";
-
+import { useForm } from "react-hook-form";
+/* LIBRERIA USADA PARA EL FORM ======>>>>>>> https://react-hook-form.com */
 function Admin() {
-	const [formValues, setFormValues] = useState([""]);
+	const { register, handleSubmit } = useForm();
 
-	const handleInput = (e: any) => {
-		const data = e.target.value;
-		setFormValues(data);
-	};
-
-	const handleForm = (e: any) => {
-		e.preventDefault();
-		console.log(formValues);
-	};
+	const onSubmit = (d: any) => alert(JSON.stringify(d));
 
 	return (
 		<div className="div-admin">
 			<h1>Ingresa un proyecto</h1>
-			<form action="" className="div-form" onSubmit={handleForm}>
+			<form action="" className="div-form" onSubmit={handleSubmit(onSubmit)}>
 				<input
 					type="text"
 					placeholder="TITLE"
 					className="inputs-form"
-					value={formValues}
-					onChange={handleInput}
+					{...register("title", { required: true, maxLength: 30 })}
 				/>
-				<input type="text" placeholder="CATEGORY" className="inputs-form" />
-				<input type="text" placeholder="TAGS" className="inputs-form" />
+				<input
+					type="text"
+					placeholder="CATEGORY"
+					className="inputs-form"
+					{...register("category")}
+				/>
+				<input
+					type="text"
+					placeholder="TAGS"
+					className="inputs-form"
+					{...register("tags")}
+				/>
 				<textarea
-					name="text area"
+					{...register("short description")}
 					placeholder="SHORT DESCRIPTION"
 					id=""
 					className="inputs-form"
 				></textarea>
 				<textarea
-					name="text area"
+					{...register("long description")}
 					placeholder="LONG DESCRIPTION"
 					id=""
 					className="inputs-form"
 				></textarea>
-				<input type="file" className="inputs-form" />
-				<input type="date" placeholder="DATE" className="inputs-form" />
-				<select className="inputs-form">
+				<input type="file" className="inputs-form" {...register("file")} />
+				<input
+					type="date"
+					placeholder="DATE"
+					className="inputs-form"
+					{...register("date")}
+				/>
+				<select className="inputs-form" {...register("select")}>
 					<option>En desarrollo</option>
 					<option>Finalizado</option>
 				</select>
