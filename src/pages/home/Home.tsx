@@ -15,10 +15,11 @@ function Home() {
           lastProjects.map( (project) => {
               const { title, shortDescription, imgs, id } = project
                 return <Card 
-                key= { id }
-                title={ title }
-                description={ shortDescription }
-                img={ imgs[0] }
+                key = { id }
+                id = {id}
+                title = { title }
+                description = { shortDescription }
+                img = { imgs[0] }
               />
           } )
         }
