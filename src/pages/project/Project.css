@@ -1,0 +1,29 @@
+.project-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.project-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+    360deg,
+    var(--primary-dark),
+    rgba(0, 0, 0, 0.5)
+    ),
+    url(../../assets/bk1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    color: var(--pure-white);
+}
+
+.project-header p {
+    font-weight: 100;
+}

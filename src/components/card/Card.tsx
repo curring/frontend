@@ -4,7 +4,7 @@ import { ICard } from "../../types"
 
 
 
-function Card( {title, description, img}: ICard ) {
+function Card( {id, title, description, img}: ICard ) {
     
     
     return (
@@ -13,7 +13,7 @@ function Card( {title, description, img}: ICard ) {
             <div className="card-body">
                 <h1>{ title }</h1>
                 <p>{ description }</p>
-                <Link className="button-link" to="/">
+                <Link className="button-link" to={`/projects/${id}`}>
                     ver proyecto
                 </Link>
             </div>
