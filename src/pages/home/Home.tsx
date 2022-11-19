@@ -22,11 +22,9 @@ function Home() {
               />
           } )
         }
-        
+    
       </div>
     </div>
-        
-        
   )
 }
 
